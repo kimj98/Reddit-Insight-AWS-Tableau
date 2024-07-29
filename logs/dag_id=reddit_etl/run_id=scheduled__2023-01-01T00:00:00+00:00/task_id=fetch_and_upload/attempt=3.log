@@ -1,0 +1,12 @@
+[2024-07-28T14:18:52.109-0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-28T14:18:52.115-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_etl.fetch_and_upload scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2024-07-28T14:18:52.117-0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_etl.fetch_and_upload scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2024-07-28T14:18:52.117-0500] {taskinstance.py:2306} INFO - Starting attempt 3 of 2
+[2024-07-28T14:18:52.122-0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_and_upload> on 2023-01-01 00:00:00+00:00
+[2024-07-28T14:18:52.127-0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_etl', 'fetch_and_upload', 'scheduled__2023-01-01T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/reddit_etl_dag.py', '--cfg-path', '/var/folders/z8/j0nmjgpn6nd9jdg1n9p6cqv00000gn/T/tmpqhhmyman']
+[2024-07-28T14:18:52.128-0500] {standard_task_runner.py:91} INFO - Job 6: Subtask fetch_and_upload
+[2024-07-28T14:18:52.128-0500] {logging_mixin.py:188} WARNING - /Users/alexkim/Desktop/Projects/ETL_Projects/redditviz/venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=34292) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-28T14:18:52.129-0500] {standard_task_runner.py:64} INFO - Started process 34293 to run task
+[2024-07-28T14:18:52.146-0500] {task_command.py:426} INFO - Running <TaskInstance: reddit_etl.fetch_and_upload scheduled__2023-01-01T00:00:00+00:00 [running]> on host alexs-macbook-pro.local
+[2024-07-28T14:18:52.167-0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='reddit_etl' AIRFLOW_CTX_TASK_ID='fetch_and_upload' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:00:00+00:00'
+[2024-07-28T14:18:52.167-0500] {taskinstance.py:430} INFO - ::endgroup::
